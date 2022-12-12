@@ -8,6 +8,8 @@
 </head>
 <body>
     <div id="body"></div>
+
+    <button onClick="openLink()">Open</button>
     
     
 </body>
@@ -19,14 +21,10 @@
         document.body.innerHTML += link;
     }
 
-    for (var i = 1; i <= shelfs; i++) {
-        var link = `<button onClick="openLink(` + i.toString + `)"` +  `">Open</button><br></br>`
-        document.body.innerHTML += link;
-    }
 
 
-    function openLink(shelf){
-        window.open('http://temibot.com/level/3:' + shelf.toString(), '_system');
+    function openLink(){
+        window.open('http://temibot.com/level/3:1', '_system');
     }
 
 
