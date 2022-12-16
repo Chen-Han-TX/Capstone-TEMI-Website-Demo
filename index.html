@@ -46,7 +46,9 @@
         body.innerHTML = ""
         var shelfs = 21
         for (var i = 1; i <= shelfs; i++) {
-            var link = `<a href="temi://temibot.com?level=3&shelfno=` + i.toString() + `">temi://temibot.com?level=3&shelfno=` + i.toString() + `</a><br></br>`
+            //var link = `<a href="temi://temibot.com?level=3&shelfno=` + i.toString() + `">temi://temibot.com?level=3&shelfno=` + i.toString() + `</a><br></br>`
+            var link = `<a href="temi://temibot.com/level/3:` + i.toString() + `">temi://temibot.com/level/3:` + i.toString() + `</a><br></br>`
+            
             body.innerHTML += link;
         }
     }
