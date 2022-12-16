@@ -15,29 +15,44 @@
    <a href="https://temibot.com">https://temibot.com</a><br></br>
    <a href="http://temibot.com/level/3:13">http://temibot.com/level/3:13</a><br></br>
    <a href="http://www.temibot.com/level/3:13">http://www.temibot.com/level/3:13</a><br></br>
-
-  -->  
   <br></br>
    <a href="temi://temibot.com/level/3:13">temi://temibot.com/level/3:13</a><br></br>
    <br></br>
+  -->  
+    <br></br>
+    <button onClick="showHttp()">Show HTTP</button>
+    <button onClick="showTemi()">Show Temi</button>   
+    <br></br>
 
-    <button onClick="openLink()">Open</button>
+    <div id="links"></div>
+
     
     
 </body>
 <script>
-    var body = document.getElementById("body")
-    var shelfs = 21
-    for (var i = 1; i <= shelfs; i++) {
-        var link = `<a href="http://temibot.com/level/3:` + i.toString() + `">http://temibot.com/level/3:` + i.toString() + `</a><br></br>`
-        document.body.innerHTML += link;
+
+    function showHttp(){
+        var body = document.getElementById("links")
+        body.innerHTML = ""
+        var shelfs = 21
+        for (var i = 1; i <= shelfs; i++) {
+            var link = `<a href="http://temibot.com/level/3:` + i.toString() + `">http://temibot.com/level/3:` + i.toString() + `</a><br></br>`
+            body.innerHTML += link;
+        }
+    }
+
+    function showTemi(){
+        var body = document.getElementById("links")
+        body.innerHTML = ""
+        var shelfs = 21
+        for (var i = 1; i <= shelfs; i++) {
+            var link = `<a href="temi://temibot.com/level/3:` + i.toString() + `">temi://temibot.com/level/3:` + i.toString() + `</a><br></br>`
+            body.innerHTML += link;
+        }
     }
 
 
 
-    function openLink(){
-        window.open('http://temibot.com/level/3:1', '_system');
-    }
 
 
 
