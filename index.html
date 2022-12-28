@@ -36,7 +36,8 @@
         body.innerHTML = ""
         var shelfs = 21
         for (var i = 1; i <= shelfs; i++) {
-            var link = `<a href="http://temibot.com/?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK">http://temibot.com?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK</a><br></br>`
+            var link = `<a href="http://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life;E909O24O12PBK` + `">http://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life;E909O24O12PB`+ `</a><br></br>`
+            //var link = `<a href="http://temibot.com/?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK">http://temibot.com/?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK</a><br></br>`
             //var link = `<a href="http://temibot.com/level/3:` + i.toString() + `">http://temibot.com/level/3:` + i.toString() + `</a><br></br>`
             body.innerHTML += link;
         }
@@ -47,7 +48,8 @@
         body.innerHTML = ""
         var shelfs = 21
         for (var i = 1; i <= shelfs; i++) {
-            var link = `<a href="temi://temibot.com/?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK">temi://temibot.com?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK</a><br></br>`
+            var link = `<a href="temi://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life;E909O24O12PBK` + `">temi://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life;E909O24O12PB`+ `</a><br></br>`
+            //var link = `<a href="temi://temibot.com/?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK">temi://temibot.com?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK</a><br></br>`
             //var link = `<a href="temi://temibot.com/level/3:` + i.toString() + `:Michelle_Obama_Life:">temi://temibot.com/level/3:` + i.toString() + `</a><br></br>`
             
             body.innerHTML += link;
