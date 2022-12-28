@@ -46,8 +46,8 @@
         body.innerHTML = ""
         var shelfs = 21
         for (var i = 1; i <= shelfs; i++) {
-            //var link = `<a href="temi://temibot.com?level=3&shelfno=` + i.toString() + `">temi://temibot.com?level=3&shelfno=` + i.toString() + `</a><br></br>`
-            var link = `<a href="temi://temibot.com/level/3:` + i.toString() + `">temi://temibot.com/level/3:` + i.toString() + `</a><br></br>`
+            var link = `<a href="temi://temibot.com?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909.O24O12PBK.">temi://temibot.com?level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909.O24O12PBK.</a><br></br>`
+            //var link = `<a href="temi://temibot.com/level/3:` + i.toString() + `:Michelle_Obama_Life:">temi://temibot.com/level/3:` + i.toString() + `</a><br></br>`
             
             body.innerHTML += link;
         }
