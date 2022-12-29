@@ -36,11 +36,13 @@
         body.innerHTML = ""
         var shelfs = 21
         for (var i = 1; i <= shelfs; i++) {
-            // Book name: Michelle Obama's Life: 1
+            // Book name: Michelle Obama's Life & Experience
             // Book Id: E909. O24 O12 PBK
 
-            //var link = `<a href="http://temibot.com/level/3;` + i.toString() + `;Michelle_Obama&39s_Life&59_1;E909&46_O24_O12PBK` + `">http://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life;E909O24O12PB`+ `</a><br></br>`
-            var link = `<a href="http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK">http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle_Obama's_Life&bookid=E909O24O12PBK</a><br></br>`
+            
+            var link = `<a href="http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20%26%20Experience&bookid=E909%2E%20O24%20O12%20PBK">http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20%26%20Experience&bookid=E909%2E%20O24%20O12%20PBK</a><br></br>`
+
+            //var link = `<a href="http://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life:_1;E909&46_O24_O12PBK` + `">http://temibot.com/level/3;` + i.toString() + `;Michelle_Obama's_Life;E909O24O12PB`+ `</a><br></br>`
             //var link = `<a href="http://temibot.com/level/3:` + i.toString() + `">http://temibot.com/level/3:` + i.toString() + `</a><br></br>`
             body.innerHTML += link;
         }
