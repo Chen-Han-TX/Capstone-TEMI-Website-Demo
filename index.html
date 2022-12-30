@@ -9,16 +9,14 @@
     <title>Capstone TEMI</title>
 </head>
 <body>
-    <div id="body"></div>
-    <button class="btn btn-primary" onClick="showHttp()">Show HTTP</button>
-    <div id="links"></div>
+    <div id="body" style="text-align: center;">
+        <button class="btn btn-primary" onClick="showHttp()">Show HTTP</button> 
+        <button class="btn btn-success" onClick="showbook1()">The Excellence of Play</button>
+        <button class="btn btn-success" onClick="showbook2()">Design Secrets: Packaging</button>
+    </div>
     <br></br>
 
-    <button class="btn btn-success" onClick="showbook1()">The Excellence of Play</button>
-    <div id="book1"></div>
-    <br></br>
-    <button class="btn btn-success" onClick="showbook2()">Design Secrets: Packaging</button>
-    <div id="book2"></div>
+    <div id="links"></div>
 
     
 </body>
@@ -27,51 +25,41 @@
 
     function showHttp(){
         var body = document.getElementById("links")
-        if (body.innerHTML == "") {
-            var shelfs = 21
-            for (var i = 1; i <= shelfs; i++) {
-                // Book name: Michelle Obama's Life & Experience
-                // Book Id: E909. O24 O12 PBK
-                var link = `<a href="http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20~%20Experience&bookid=E909%2E%20O24%20O12%20PBK">http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20~%20Experience&bookid=E909%2E%20O24%20O12%20PBK</a><br></br>`
-                body.innerHTML += link;
-            }
-        } else {
-            body.innerHTML = ""
+        body.innerHTML = ""
+        var shelfs = 21
+        for (var i = 1; i <= shelfs; i++) {
+            // Book name: Michelle Obama's Life & Experience
+            // Book Id: E909. O24 O12 PBK
+            var link = `<a href="http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20~%20Experience&bookid=E909%2E%20O24%20O12%20PBK">http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20~%20Experience&bookid=E909%2E%20O24%20O12%20PBK</a><br></br>`
+            body.innerHTML += link;
         }
     }
 
     function showbook1(){
-        var body = document.getElementById("book1");
-        if (body.innerHTML == "") {
-            var code = `
-            <div style="text-align: center;margin: auto;"> 
-                <img src="src/play.png" class="rounded mx-auto d-block" style="width:60%;" alt="Play book">
-                <a style="font-size:32px" href="http://temibot.com/level/level=3&shelfno=3&bookname=The%20Excellence%20of%20Play&bookid=LB1139%2E35%2EP55%20E96%20PBK%2E">Level 3, Early Childhood, Shelf 3</a>
-            </div>
+        var body = document.getElementById("links");
+        body.innerHTML = "";
+        var code = `
+        <div style="text-align: center;margin: auto;"> 
+            <img src="src/play.png" class="rounded mx-auto d-block" style="width:80%;" alt="Play book">
+            <a style="font-size:32px" href="http://temibot.com/level/level=3&shelfno=3&bookname=The%20Excellence%20of%20Play&bookid=LB1139%2E35%2EP55%20E96%20PBK%2E">Level 3, Early Childhood, Shelf 3</a>
+        </div>
+        `
+        body.innerHTML += code;
 
-            `
-            body.innerHTML += code;
-        } else {
-            body.innerHTML = "";
-        }
     }
 
 
     function showbook2(){
-        var body = document.getElementById("book2");
-        if (body.innerHTML == "") {
-            var code = `
-            <div style="text-align: center;margin: auto;"> 
-                <img src="src/design.png" class="rounded mx-auto d-block" style="width:60%;" alt="Design book">
-                <a style="font-size:32px" href="http://temibot.com/level/level=3&shelfno=10&bookname=Design%20Secrets%20%3A%20Packaging%20%3A%2050%20Real-life%20Projects%20Uncovered&bookid=NC1000%20F532">Level 3, Design, Shelf 10</a>
-                
-            </div>
+        var body = document.getElementById("links");
+        body.innerHTML = "";
+        var code = `
+        <div style="text-align: center;margin: auto;"> 
+            <img src="src/design.png" class="rounded mx-auto d-block" style="width:80%;" alt="Design book">
+            <a style="font-size:32px" href="http://temibot.com/level/level=3&shelfno=10&bookname=Design%20Secrets%20%3A%20Packaging%20%3A%2050%20Real-life%20Projects%20Uncovered&bookid=NC1000%20F532">Level 3, Design, Shelf 10</a>
+        </div>
+        `
+        body.innerHTML += code;
 
-            `
-            body.innerHTML += code;
-        } else {
-            body.innerHTML = "";
-        }
     }
 
 
