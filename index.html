@@ -12,7 +12,6 @@
     
 
     <div id="body" style="text-align: center;">
-        <button class="btn btn-primary" onClick="showHttp()">Show HTTP</button> 
         <button class="btn btn-success" onClick="showbook1()">The Excellence of Play</button>
         <button class="btn btn-success" onClick="showbook2()">Design Secrets: Packaging</button>
     </div>
@@ -38,18 +37,6 @@
 </body>
 <script>
 
-
-    function showHttp(){
-        var body = document.getElementById("links")
-        body.innerHTML = ""
-        var shelfs = 21
-        for (var i = 1; i <= shelfs; i++) {
-            // Book name: Michelle Obama's Life & Experience
-            // Book Id: E909. O24 O12 PBK
-            var link = `<a href="http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20~%20Experience&bookid=E909%2E%20O24%20O12%20PBK">http://temibot.com/level/level=3&shelfno=` + i.toString() + `&bookname=Michelle%20Obama's%20Life%20~%20Experience&bookid=E909%2E%20O24%20O12%20PBK</a><br></br>`
-            body.innerHTML += link;
-        }
-    }
 
     function showbook1(){
         var body = document.getElementById("links");
