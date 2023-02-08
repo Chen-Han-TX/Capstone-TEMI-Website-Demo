@@ -13,7 +13,9 @@
 
     <div id="body" style="text-align: center;">
         <button class="btn btn-success" onClick="showbook1()">The Excellence of Play</button>
+        <button class="btn btn-success" onClick="showbook3()">Obama's Life</button>
         <button class="btn btn-success" onClick="showbook2()">Design Secrets: Packaging</button>
+
     </div>
 
     <div id="links"></div>
@@ -62,6 +64,19 @@
         </div>
         `
         body.innerHTML += code;
+    }
+
+    function showbook3(){
+        var body = document.getElementById("links");
+        body.innerHTML = "";
+        var code = `
+        <div style="text-align: center;margin: auto;"> 
+            <img src="src/play.png" class="rounded mx-auto d-block" style="width:80%;" alt="Play book">
+            <a style="font-size:32px" href="http://temibot.com/level/level=3&shelfno=18&bookname=Obama's%20Life&bookid=Sf93234%20.13213L">Level 3, Obama's Life, Shelf 19</a>
+        </div>
+        `
+        body.innerHTML += code;
+
     }
 
 
